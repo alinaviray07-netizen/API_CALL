@@ -7,16 +7,16 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    // GET /api/students
+    
     public function index()
-    {
-        return response()->json([
-            'message' => 'Students fetched successfully',
-            'data' => Student::all()
-        ], 200);
-    }
+{
+    return response()->json([
+        'message' => 'Students fetched successfully',
+        'data' => Student::all()
+    ], 200, [], JSON_PRETTY_PRINT);
+}
 
-    // GET /api/students/{id}
+    
     public function show($id)
     {
         $student = Student::find($id);
@@ -33,7 +33,7 @@ class StudentController extends Controller
         ], 200);
     }
 
-    // POST /api/students
+   
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -50,7 +50,7 @@ class StudentController extends Controller
         ], 201);
     }
 
-    // PUT /api/students/{id}
+  
     public function update(Request $request, $id)
     {
         $student = Student::find($id);
@@ -75,7 +75,7 @@ class StudentController extends Controller
         ], 200);
     }
 
-    // PATCH /api/students/{id}
+    
     public function patch(Request $request, $id)
     {
         $student = Student::find($id);
@@ -100,7 +100,7 @@ class StudentController extends Controller
         ], 200);
     }
 
-    // DELETE /api/students/{id}
+
     public function destroy($id)
     {
         $student = Student::find($id);
@@ -118,7 +118,7 @@ class StudentController extends Controller
         ], 200);
     }
 
-    // DELETE /api/students
+
     public function destroyAll()
     {
         Student::truncate();
