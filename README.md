@@ -1,3 +1,10 @@
+ALINA E. VIRAY
+POSTMAN API_CALL DEMONSTRATION
+In this project I created and tested a API calls using a Postman to understand how the APIs work and how different the HTTP methods function is. My project demonstrates the use of GET, POST, PUT, PATCH and DELETE requests together with their corresponding responses.
+
+G-DRIVE LINK:
+https://drive.google.com/drive/folders/19VLDgvNHH-O3J_VEbbAq6MJD4hkSh3fF?usp=sharing
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
